@@ -97,22 +97,20 @@ public class Main {
     }
     public static void task7 () {
         System.out.println("Задача 7");
-        int day=2;
-        int i=0;
-        for (; i<= 31; i++){
-            day = day +7;
-            i=i+7;
+        int i=5;
+        for (; i< 31; i=i+7){
             System.out.println("Сегодня пятница, " + i + "е число. Необходимо подготовить отчет");
         }
     }
     public static void task8 () {
         System.out.println("Задача 8");
-        int i=1817;
-        int b = 79;
-        for (; i<=2117;){
-            i=i+b;
-            System.out.println(i);
+        int a = 2023;
+        int i = a - 200;
+        int b = a + 100;
+        for (int c = i; c <= b; c++) {
+            if (c % 79 == 0) {
+                System.out.println(c);
+            }
         }
     }
-
 }
